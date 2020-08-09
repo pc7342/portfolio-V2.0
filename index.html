@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pc7342's Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $.ajax({
+        type: 'get',
+        url: './assets/images/my.svg'
+      }).done(function(data) {
+        var svg = $(data).find('svg');
+        $('body').prepend(svg);
+      });
+    </script>
+</head>
+<body>
+    <div class="uk-container uk-animation-fade">
+        <div class="uk-flex uk-flex-center">
+            <div class="uk-card uk-card-default uk-width-1-2@m">
+                <div class="uk-card-header">
+                    <div class="uk-grid uk-flex-middle uk-animation-slide-bottom-small">
+                        <div class="uk-width-auto">
+                            <svg class="img-pro"><use xlink:href="#my_img"/></svg>
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="name">pc7342</h3>
+                            <p class="exp">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <h4 class="top"><span class="uk-margin-small-right" uk-icon="user"></span>About Me</h4>
+                    <p>いつもPHPやRubyまたはNode.jsを深夜に書いたりしている一般人です。好物はお肉。彼女はいません。<s>（あたりまえだよなぁ）</s><br>趣味はプログラミング・サイト作成・自作PCです。</p>
+                    <table class="uk-table uk-table-divider">
+                        <tbody>
+                            <tr>
+                                <td class="sm"><i class="fas fa-birthday-cake"></i> <span class="sm_none">Birthday</span></td>
+                                <td>2003/10/04</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i> <span class="sm_none">Location</span></td>
+                                <td>Gunma,JP</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-graduation-cap"></i> <span class="sm_none">Grade</span></td>
+                                <td>Second grade of high school</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="top"><span class="uk-margin-small-right" uk-icon="code"></span>Skill</h4>
+                    <div class="box">
+                        <div class="uk-grid uk-flex-middle uk-animation-slide-bottom-small">
+                            <div class="uk-width-auto">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <div class="uk-width-expand">
+                                <span class="uk-badge uk-tool">CentOS</span>
+                                <span class="uk-badge uk-tool">Ubuntu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="uk-grid uk-flex-middle uk-animation-slide-bottom-small">
+                            <div class="uk-width-auto">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="uk-width-expand">
+                                <span class="uk-badge uk-tool">Yarn</span>
+                                <span class="uk-badge uk-lun">Vue.js</span>
+                                <span class="uk-badge uk-lun">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="uk-grid uk-flex-middle uk-animation-slide-bottom-small">
+                            <div class="uk-width-auto">
+                                <img class="ruby" src="/assets/images/ruby.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <span class="uk-badge uk-lun">Rails</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="uk-grid uk-flex-middle uk-animation-slide-bottom-small">
+                            <div class="uk-width-auto">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="uk-width-expand">
+                                <span class="uk-badge uk-tool">Composer</span>
+                                <span class="uk-badge uk-lun">Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="top"><span class="uk-margin-small-right" uk-icon="history"></span>History</h4>
+                    <span class="uk-badge uk-start">Start</span>
+                    <div class="uk-flex box2">
+                        <div class="uk-width-1-3">October 4, 2003</div>
+                        <div class="uk-width-1-3"><i class="fas fa-birthday-cake"></i> 生誕</div>
+                    </div>
+
+                    <div class="uk-flex box2">
+                        <div class="uk-width-1-3"><span class="uk-margin-small-right" uk-icon="chevron-down"></span>2016 ～ 2017</div>
+                        <div class="uk-width-2-3">複数のMinecraftサーバーのWeb担当</div>
+                    </div>
+                    
+                    <div class="uk-flex box2">
+                        <div class="uk-width-1-3"><span class="uk-margin-small-right" uk-icon="chevron-down"></span>2018 ～ 2019</div>
+                        <div class="uk-width-2-3">Rezxis Network Web担当</div>
+                    </div>
+                    <span class="uk-badge uk-now">Now</span>
+                    
+
+                    <h4 class="top"><span class="uk-margin-small-right" uk-icon="receiver"></span>Contact Me</h4>
+                    <a href="https://twitter.com/pc7342" target="blank" class="uk-button uk-button-text uk-padding-small"><span class="uk-margin-small-right" uk-icon="twitter"></span>@pc7342（Main）</a>
+                    <a href="https://twitter.com/pc7342_sub" target="blank" class="uk-button uk-button-text uk-padding-small"><span class="uk-margin-small-right" uk-icon="twitter"></span>@pc7342_sub（Sub）</a>
+                    <a href="https://github.com/pc7342" target="blank" class="uk-button uk-button-text uk-padding-small"><span class="uk-margin-small-right" uk-icon="github"></span>@pc7342</a>
+                    <a href="mailto:info&#64;pc7342.dev" target="blank" class="uk-button uk-button-text uk-padding-small"><span class="uk-margin-small-right" uk-icon="mail"></span>info@pc7342.dev</a>
+                </div>
+                
+                <div class="uk-card-footer">
+                    <p class="uk-text-meta">Icon by @unios103.</p>
+                    <p class="uk-text-meta">Copyright &copy; <script type="text/javascript">myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);</script> pc7342.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
